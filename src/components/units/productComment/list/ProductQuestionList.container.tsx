@@ -13,7 +13,6 @@ export default function ProductQuestionListContainer() {
   const { data, fetchMore } = useQuery(FETCH_USED_ITEM_QUESTIONS, {
     variables: { useditemId: router.query._id },
   });
-  console.log(data);
   const [deleteUseditemQuestion] = useMutation(DELETE_USED_ITEM_QUESTION);
 
   const onClickDelete = async (event: any) => {

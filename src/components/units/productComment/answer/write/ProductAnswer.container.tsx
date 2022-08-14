@@ -49,7 +49,6 @@ export default function ProductAnswerContainer(
 
   const onClickAnswerUpdate = async (data: any) => {
     try {
-      console.log(props.answerId);
       await updateUseditemQuestionAnswer({
         variables: {
           updateUseditemQuestionAnswerInput: {

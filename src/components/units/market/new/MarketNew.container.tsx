@@ -66,7 +66,6 @@ export default function MarketNewContainerPage(
           },
         },
       });
-      console.log(result.data);
       Modal.success({ content: "상품등록이 완료되었습니다!" });
       router.push(`/market/${result.data.createUseditem._id}`);
     } catch (error) {
@@ -168,7 +167,6 @@ export default function MarketNewContainerPage(
               }
             );
             const location = result.data.documents[0]?.address?.address_name;
-            console.log(location);
             setLocation(location);
 
             setValue("address", location);

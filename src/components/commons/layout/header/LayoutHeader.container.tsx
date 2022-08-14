@@ -35,7 +35,6 @@ export default function LayoutHeader() {
       setAccessToken("");
       localStorage.removeItem("accessToken");
       const result = logoutUser();
-      console.log(result);
       router.push("/login");
     } else {
       router.push("/join");

@@ -67,7 +67,6 @@ export default function PaymentPage() {
         // callback
         if (rsp.success) {
           //결제 성공시
-          console.log(rsp);
 
           try {
             createPointTransactionOfLoading({

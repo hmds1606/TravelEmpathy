@@ -32,7 +32,6 @@ export default function PasswordEditContainerPage() {
         content: "비밀번호 변경이 완료되었습니다. 다시 로그인해주세요.",
       });
       router.push("/login");
-      console.log(result);
     } catch (error) {
       alert((error as Error).message);
     }
