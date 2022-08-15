@@ -51,6 +51,13 @@ export const ContentsBox = styled.div`
   justify-content: space-around;
   align-items: center;
 
+  & div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media ${breakPoints.mobile} {
     width: 22em;
     height: 23em;
@@ -58,6 +65,7 @@ export const ContentsBox = styled.div`
 `;
 
 export const ContentsInnerBox = styled.div`
+  width: 100%;
   height: 60px;
   display: flex;
   flex-direction: column;
@@ -75,6 +83,8 @@ export const Error = styled.p`
 
 export const ContentsTitle = styled.p`
   margin-bottom: 0em;
+  display: flex;
+  align-self: flex-start;
 `;
 
 export const ButtonBox = styled.div`

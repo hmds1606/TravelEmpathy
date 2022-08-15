@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:description"
           content="환율정보부터 중고마켓까지! 프로여행러들의 공감 커뮤니티입니다."
         ></meta>
-        <meta property="og:image" content="/img/로고.png"></meta>
+        <meta property="og:image" content="/img/배경로고.png"></meta>
       </Head>
       <RecoilRoot>
         <ApolloSetting>
