@@ -20,7 +20,7 @@ export default function PasswordEditContainerPage() {
 
   const onClickPasswordEdit = async (data: any) => {
     try {
-      const result = await resetUserPassword({
+      await resetUserPassword({
         variables: {
           password: data.password,
         },

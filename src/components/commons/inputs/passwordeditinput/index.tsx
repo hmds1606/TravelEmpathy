@@ -9,7 +9,7 @@ const PasswordEdit = styled.input`
 interface IPasswordEditInputProps {
   type?: string;
   placeholder?: string;
-  register?: string;
+  register?: any;
 }
 
 export default function PasswordEditInput(props: IPasswordEditInputProps) {

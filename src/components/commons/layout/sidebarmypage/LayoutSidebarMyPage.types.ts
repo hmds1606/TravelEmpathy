@@ -1,5 +1,3 @@
-import { MouseEvent } from "react";
-
 export interface IMenuEl {
   page: any;
   name: string;

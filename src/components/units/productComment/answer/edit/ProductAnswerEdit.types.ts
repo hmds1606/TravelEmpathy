@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface IProductAnswerEditContainerProps {
   refetch: any;
   onClickDelete: any;

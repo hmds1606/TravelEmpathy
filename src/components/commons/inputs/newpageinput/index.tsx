@@ -15,7 +15,7 @@ const NewInput = styled.input`
 interface INewPageInputProps {
   type: string;
   placeholder: string;
-  register: string;
+  register: any;
   defaultValue: string;
 }
 

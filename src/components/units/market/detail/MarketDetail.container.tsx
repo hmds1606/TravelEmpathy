@@ -1,7 +1,7 @@
-import { useMutation, useQuery } from "@apollo/client";
+import { useMutation } from "@apollo/client";
 import { Modal } from "antd";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { basketState } from "../../../../commons/global-state";
 import { useAuth } from "../../../commons/hooks/useAuth";
@@ -9,7 +9,6 @@ import MarketDetailPresenter from "./MarketDetail.presenter";
 import {
   CREATE_POINT_TRANSACTION_OF_BUYING_AND_SELLING,
   DELETE_USED_ITEM,
-  FETCH_USED_ITEM,
   FETCH_USED_ITEMS,
   TOGGLE_USED_ITEM_PICK,
 } from "./MarketDetail.queries";
@@ -32,7 +31,7 @@ export default function MarketDetailContainerPage(
   );
   const [toggleUseditemPick] = useMutation(TOGGLE_USED_ITEM_PICK);
 
-  const [basketItems, setBasketItems] = useRecoilState(basketState);
+  const [, setBasketItems] = useRecoilState(basketState);
 
   const onClickBuy = async () => {
     try {

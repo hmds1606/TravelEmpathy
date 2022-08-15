@@ -1,12 +1,10 @@
 import { Badge } from "antd";
-import Link from "next/link";
 import {
   Wrapper,
   InnerButton,
   ButtonBox,
   LogoBox,
   Logo,
-  Point,
 } from "./LayoutHeader.styles";
 import { ILayoutHeaderUIProps } from "./LayoutHeader.types";
 

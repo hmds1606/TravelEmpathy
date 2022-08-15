@@ -18,8 +18,9 @@ const Input = styled.input`
 interface IBorderInputReadOnlyProps {
   type?: string;
   placeholder?: string;
-  register?: string;
+  register?: any;
   defaultValue?: string;
+  readOnly?: any;
 }
 
 export default function BorderInputReadOnly(props: IBorderInputReadOnlyProps) {

@@ -1,4 +1,3 @@
-import { Image } from "antd";
 import * as F from "./Uploads01.styles";
 import { IUploads01UIProps } from "./Uploads01.types";
 

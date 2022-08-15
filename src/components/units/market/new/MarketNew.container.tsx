@@ -3,16 +3,12 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Modal } from "antd";
 import axios from "axios";
 import { useRouter } from "next/router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../../../commons/hooks/useAuth";
 import { schema } from "../../../commons/schema/market/yup-schema-market";
 import MarketNewPresenter from "./MarketNew.presenter";
-import {
-  CREATE_USED_ITEM,
-  UPDATE_USED_ITEM,
-  UPLOAD_FILE,
-} from "./MarketNew.queries";
+import { CREATE_USED_ITEM, UPDATE_USED_ITEM } from "./MarketNew.queries";
 import { IMarketNewContainerPageProps } from "./MarketNew.types";
 
 declare const window: typeof globalThis & {

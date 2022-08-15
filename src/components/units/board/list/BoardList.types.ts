@@ -23,8 +23,8 @@ export interface IListPagePresenterProps {
   onClickJeju: () => void;
   onClickFood: () => void;
   dataBoardsCount: any;
-  onChangeStartDate: (value: moment.Moment | null, dateString: string) => void;
-  onChangeEndDate: (value: moment.Moment | null, dateString: string) => void;
+  onChangeStartDate: (value: any, dateString: string) => void;
+  onChangeEndDate: (value: any, dateString: string) => void;
   onChangeSearch: (event: any) => void;
   onClickSearch: () => void;
 }

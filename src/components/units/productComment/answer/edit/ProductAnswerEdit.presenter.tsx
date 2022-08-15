@@ -49,6 +49,8 @@ export default function ProductAnswerEditPresenter(
             answerId={""}
             setIsAnswer={undefined}
             isAnswer={false}
+            el={undefined}
+            onClickAnswerImg={undefined}
           />
         )}
       </div>

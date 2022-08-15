@@ -1,4 +1,3 @@
-import { getDate } from "../../../../commons/libraries/date";
 import * as F from "./Market.styles";
 import { IMarketPresenterPageProps } from "./Market.types";
 import MenuTabs from "./markettabs/Tabs";

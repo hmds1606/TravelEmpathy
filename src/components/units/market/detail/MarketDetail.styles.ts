@@ -1,6 +1,4 @@
-import { HeartTwoTone } from "@ant-design/icons";
 import styled from "@emotion/styled";
-import { Space } from "antd";
 import { breakPoints } from "../../../../commons/styles/media";
 
 export const Container = styled.main`

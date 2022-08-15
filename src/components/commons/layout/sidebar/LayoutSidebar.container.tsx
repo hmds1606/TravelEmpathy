@@ -1,6 +1,6 @@
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import LayoutSidebarPresenter from "./LayoutSidebar.presenter";
-import { MouseEvent, useEffect, useState } from "react";
+import { MouseEvent, useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { todayState } from "../../../../commons/global-state";
 

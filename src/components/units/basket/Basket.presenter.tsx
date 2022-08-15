@@ -1,9 +1,5 @@
 import * as F from "./Basket.styles";
-import {
-  IBasketItems,
-  IBasketItemsProps,
-  IBasketPresenterPageProps,
-} from "./Basket.types";
+import { IBasketItemsProps, IBasketPresenterPageProps } from "./Basket.types";
 
 export default function BasketPresenterPage(props: IBasketPresenterPageProps) {
   return (

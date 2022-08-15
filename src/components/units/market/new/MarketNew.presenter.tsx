@@ -2,7 +2,6 @@ import SquareButton from "../../../commons/buttons/square";
 import BorderInput from "../../../commons/inputs/borderinput";
 import NewPageHalfInput from "../../../commons/inputs/newpagehalfinput";
 import NewPageInput from "../../../commons/inputs/newpageinput";
-import ContentsTextarea from "../../../commons/textarea/contents";
 import * as F from "./MarketNew.styles";
 import "react-quill/dist/quill.snow.css";
 import dynamic from "next/dynamic";

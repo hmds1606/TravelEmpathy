@@ -10,7 +10,7 @@ export const Textarea = styled.textarea`
 interface IContentsTextareaProps {
   type: string;
   placeholder: string;
-  register: string;
+  register: any;
 }
 
 export default function ContentsTextarea(props: IContentsTextareaProps) {

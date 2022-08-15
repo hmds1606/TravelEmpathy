@@ -60,6 +60,13 @@ export default function ProductQuestionItemPresenter(
           answerId={props.answerId}
           el={props.el}
           onClickAnswerImg={props.onClickAnswerImg}
+          //타입
+          answerEditId={""}
+          refetch={undefined}
+          setIsAnswerEdit={undefined}
+          isAnswerEdit={false}
+          answerData={undefined}
+          firstId={undefined}
         />
       )}
     </S.Wrapper>

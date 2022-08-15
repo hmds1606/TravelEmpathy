@@ -15,6 +15,8 @@ export interface IProductAnswerContainerProps {
   isAnswerEdit: boolean;
   answerData: any;
   firstId: any;
+  el: any;
+  onClickAnswerImg: any;
 }
 
 export interface IProductAnswerPresenterProps {

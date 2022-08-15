@@ -1,4 +1,4 @@
-interface ILayoutBannerUIProps {
+export interface ILayoutBannerUIProps {
   onClickBag: () => void;
   onClickJeju: () => void;
   onClickFood: () => void;

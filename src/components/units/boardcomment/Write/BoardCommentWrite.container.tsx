@@ -91,7 +91,7 @@ export default function BoardCommentWriteContainer(
     if (star !== props.el?.rating) updateBoardCommentInput.rating = star;
 
     try {
-      const result = await updateBoardComment({
+      await updateBoardComment({
         variables: {
           updateBoardCommentInput,
           password,

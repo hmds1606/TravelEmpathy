@@ -1,7 +1,5 @@
-import { useMutation, useQuery } from "@apollo/client";
+import { useMutation } from "@apollo/client";
 import { useForm } from "react-hook-form";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
 import {
   CREATE_USED_ITEM_QUESTION,
   FETCH_USED_ITEM_QUESTIONS,
@@ -16,7 +14,7 @@ import { IProductQuestionWriteContainerProps } from "./ProductQuestionWrite.type
 export default function ProductQuestionWriteContainer(
   props: IProductQuestionWriteContainerProps
 ) {
-  const { data } = useQuery(FETCH_USED_ITEM_QUESTIONS);
+  // const { data } = useQuery(FETCH_USED_ITEM_QUESTIONS);
 
   const router = useRouter();
   const [createUseditemQuestion] = useMutation(CREATE_USED_ITEM_QUESTION);
@@ -27,7 +25,7 @@ export default function ProductQuestionWriteContainer(
 
   const onClickComment = async (data: any) => {
     try {
-      const result = await createUseditemQuestion({
+      await createUseditemQuestion({
         variables: {
           createUseditemQuestionInput: {
             ...data,

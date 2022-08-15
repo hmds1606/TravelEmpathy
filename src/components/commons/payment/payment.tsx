@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { MouseEvent, useState } from "react";
-import { gql, useMutation, useQuery } from "@apollo/client";
+import { useState } from "react";
+import { gql, useMutation } from "@apollo/client";
 import { Modal } from "antd";
 import styled from "@emotion/styled";
 

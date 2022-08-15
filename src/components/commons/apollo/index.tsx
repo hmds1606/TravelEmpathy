@@ -2,7 +2,6 @@ import {
   ApolloClient,
   ApolloLink,
   ApolloProvider,
-  gql,
   InMemoryCache,
 } from "@apollo/client";
 import { createUploadLink } from "apollo-upload-client";
@@ -10,7 +9,6 @@ import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { accessTokenState, isLoadedState } from "../../../commons/global-state";
 import { onError } from "@apollo/client/link/error";
-import { GraphQLClient } from "graphql-request";
 import { getAccessToken } from "../../../commons/libraries/getAccessToken";
 
 interface IApolloSettingProps {
@@ -19,7 +17,7 @@ interface IApolloSettingProps {
 
 export default function ApolloSetting(props: IApolloSettingProps) {
   const [accessToken, setAccessToken] = useRecoilState(accessTokenState);
-  const [isLoaded, setIsLoaded] = useRecoilState(isLoadedState);
+  const [, setIsLoaded] = useRecoilState(isLoadedState);
 
   useEffect(() => {
     //refreshToken으로 권한분기

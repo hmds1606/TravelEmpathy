@@ -34,7 +34,7 @@ export default function LayoutHeader() {
     if (localStorage.getItem("accessToken")) {
       setAccessToken("");
       localStorage.removeItem("accessToken");
-      const result = logoutUser();
+      logoutUser();
       router.push("/login");
     } else {
       router.push("/join");

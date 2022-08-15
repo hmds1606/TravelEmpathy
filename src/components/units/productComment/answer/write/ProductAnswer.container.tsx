@@ -1,6 +1,5 @@
 import { useMutation } from "@apollo/client";
 import { Modal } from "antd";
-import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import ProductAnswerPresenter from "./ProductAnswer.presenter";
 import {
@@ -26,7 +25,7 @@ export default function ProductAnswerContainer(
   );
   const onClickAnswer = async (data: any) => {
     try {
-      const result = await createUseditemQuestionAnswer({
+      await createUseditemQuestionAnswer({
         variables: {
           createUseditemQuestionAnswerInput: {
             ...data,

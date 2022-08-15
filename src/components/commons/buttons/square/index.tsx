@@ -1,5 +1,9 @@
 import styled from "@emotion/styled";
 
+interface IIsActiveProps {
+  isActive?: boolean;
+}
+
 const Button = styled.button`
   width: 250px;
   height: 50px;
@@ -10,10 +14,6 @@ const Button = styled.button`
   background-color: ${(props: IIsActiveProps) =>
     props.isActive ? "#EF9F9F90" : "#bdbdbd"};
 `;
-
-interface IIsActiveProps {
-  isActive?: boolean;
-}
 
 interface ISquareButtonProps {
   isActive?: boolean;

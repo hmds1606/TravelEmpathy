@@ -1,4 +1,4 @@
-import React, { MouseEvent, useEffect } from "react";
+import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import { breakPoints } from "../../../commons/styles/media";
 

@@ -37,7 +37,12 @@ export default function MarketDetailPage() {
   ) : (
     <>
       <MarketDetailContainerPage data={data} refetch={refetch} />
-      <ProductQuestionWriteContainer />
+      <ProductQuestionWriteContainer
+        editId={""}
+        setIsEdit={undefined}
+        isEdit={false}
+        el={undefined}
+      />
       <ProductQuestionListContainer />
     </>
   );

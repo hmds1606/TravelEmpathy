@@ -1,7 +1,7 @@
-import { Wrapper, Picture, StyledSlider } from "./LayoutBanner.styles";
 import * as F from "./LayoutBanner.styles";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ILayoutBannerUIProps } from "./LayoutBanner.queries";
 
 export default function LayoutBannerUI(props: ILayoutBannerUIProps) {
   const settings = {

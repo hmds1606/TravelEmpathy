@@ -17,7 +17,7 @@ const Input = styled.input`
 interface IStandardInputProps {
   type: string;
   placeholder?: string;
-  register?: string;
+  register?: any;
 }
 
 export default function StandardInput(props: IStandardInputProps) {

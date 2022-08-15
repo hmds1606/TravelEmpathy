@@ -5,7 +5,7 @@ import {
   DELETE_BOARD_COMMENT,
 } from "./BoardCommentList.queries";
 import { useRouter } from "next/router";
-import { MouseEvent, useState } from "react";
+import { useState } from "react";
 
 export default function BoardCommentListContainer() {
   const router = useRouter();

@@ -1,4 +1,3 @@
-import { getDate } from "../../../../commons/libraries/date";
 import * as F from "./Point.styles";
 import { IPointPresenterPageProps } from "./Point.types";
 import MenuTabs from "./pointtabs/Tabs";

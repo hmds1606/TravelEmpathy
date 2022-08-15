@@ -14,7 +14,7 @@ export const NewHalfInput = styled.input`
 interface INewPageHalfInputProps {
   type: string;
   placeholder?: string;
-  register?: string;
+  register?: any;
   defaultValue?: string;
   readOnly?: any;
 }

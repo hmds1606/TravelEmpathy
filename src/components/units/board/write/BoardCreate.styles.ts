@@ -237,12 +237,6 @@ export const HomeInfo = styled.input`
   }
 `;
 
-export const WrapperBody_bottom = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`;
-
 export const ImgWrapper = styled.div`
   margin: 1em 0em;
 

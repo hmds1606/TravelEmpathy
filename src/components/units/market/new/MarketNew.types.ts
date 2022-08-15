@@ -1,10 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import {
-  FieldValues,
-  FormState,
-  UseFormHandleSubmit,
-  UseFormRegister,
-} from "react-hook-form";
+import { FieldValues, UseFormHandleSubmit } from "react-hook-form";
 
 export interface IMarketNewContainerPageProps {
   marketData: any;
@@ -16,7 +11,7 @@ export interface IMarketNewPresenterProps {
   onClickUpdate: (data: any) => Promise<void>;
   register: any;
   handleSubmit: UseFormHandleSubmit<FieldValues>;
-  formState: FormState<FieldValues>;
+  formState: any;
   onChangeContents: (value: string) => void;
   isEdit: boolean;
   marketData: any;
