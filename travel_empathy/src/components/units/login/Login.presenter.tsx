@@ -18,7 +18,7 @@ export default function LoginPresenterPage(props: ILoginPresenterPageProps) {
                 <F.ContentsIcon src="/img/login/email.png" />
                 <StandardInput
                   type="text"
-                  placeholder="이메일 주소를 입력해주세요"
+                  placeholder="이메일 주소를 입력해주세요(k@naver.com)"
                   register={props.register("email")}
                 />
               </F.ContentsInnerBox>
@@ -30,7 +30,7 @@ export default function LoginPresenterPage(props: ILoginPresenterPageProps) {
                 <F.ContentsIcon src="/img/login/password.png" />
                 <StandardInput
                   type="password"
-                  placeholder="비밀번호를 입력해주세요"
+                  placeholder="비밀번호를 입력해주세요(asdf1234)"
                   register={props.register("password")}
                 />
               </F.ContentsInnerBox>
