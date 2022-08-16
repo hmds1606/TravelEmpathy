@@ -37,6 +37,8 @@ export const MyProduct = styled.div`
   border-bottom: 1.5px solid #bdbdbd;
   font-size: 1.3em;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   @media ${breakPoints.mobile} {
     width: 25%;

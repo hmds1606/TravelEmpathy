@@ -11,7 +11,7 @@ export const WrapperComment = styled.div`
 `;
 
 export const Scroll = styled.div`
-  height: 60em;
+  /* height: 60em; */
   overflow: auto;
   width: 100%;
   margin-bottom: 2em;
