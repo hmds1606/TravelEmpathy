@@ -9,7 +9,7 @@ export default function BasketPresenterPage(props: IBasketPresenterPageProps) {
       <div>
         {props.basketItems.map((el: IBasketItemsProps, index: number) => (
           <F.MyKey key={el._id} id={el._id} onClick={props.onClickRow}>
-            <F.MyContents>{index + 1}</F.MyContents>
+            <F.MyNumber>{index + 1}</F.MyNumber>
             <F.TodayPicture>
               {el.images[0] ? (
                 <F.MiniPicture

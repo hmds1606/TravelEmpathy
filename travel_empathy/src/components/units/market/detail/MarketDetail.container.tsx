@@ -39,7 +39,7 @@ export default function MarketDetailContainerPage(
         variables: { useritemId: router.query._id },
       });
       Modal.success({ content: "구매가 완료되었습니다!" });
-      router.push("/mypage");
+      router.push("/mypage/market");
     } catch (error) {
       alert((error as Error).message);
     }

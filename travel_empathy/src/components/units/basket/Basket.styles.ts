@@ -17,7 +17,7 @@ export const Title = styled.div`
   padding: 1em 0em 0em 0em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 `;
 
@@ -28,7 +28,7 @@ export const MyKey = styled.div`
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: white;
   margin-bottom: 20px;
@@ -40,6 +40,7 @@ export const TodayPicture = styled.div`
   width: 6em;
   height: 6em;
   background-color: gray;
+  margin-right: 5em;
 `;
 
 export const MiniPicture = styled.img`
@@ -66,7 +67,18 @@ export const TodayInfo = styled.div`
   padding-top: 8px;
 `;
 
+export const MyNumber = styled.div`
+  width: 10%;
+  font-size: 1.8em;
+  font-weight: 600;
+
+  @media ${breakPoints.mobile} {
+    font-size: 1.3em;
+  }
+`;
+
 export const MyContents = styled.div`
+  width: 30%;
   font-size: 1.8em;
   font-weight: 600;
 
