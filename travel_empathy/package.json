@@ -9,11 +9,8 @@
     "lint": "next lint",
     "generate": "graphql-codegen",
     "test": "jest --watch",
-    "cypress": "cypress run",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d build"
+    "cypress": "cypress run"
   },
-  "homepage": "https://travelempathy.netlify.app/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@apollo/client": "^3.6.2",
