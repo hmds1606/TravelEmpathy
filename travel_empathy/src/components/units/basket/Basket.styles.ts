@@ -40,7 +40,11 @@ export const TodayPicture = styled.div`
   width: 6em;
   height: 6em;
   background-color: gray;
-  margin-right: 5em;
+  margin: 0em 3em;
+
+  @media ${breakPoints.mobile} {
+    margin: 0em;
+  }
 `;
 
 export const MiniPicture = styled.img`
@@ -81,6 +85,9 @@ export const MyContents = styled.div`
   width: 30%;
   font-size: 1.8em;
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media ${breakPoints.mobile} {
     font-size: 1.3em;

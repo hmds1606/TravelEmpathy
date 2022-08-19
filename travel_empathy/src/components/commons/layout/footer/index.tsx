@@ -58,7 +58,7 @@ export default function LayoutFooter() {
       <Contents>대표자: 이영주</Contents>
       <ContentsBox>
         <Contents>문의전화: 02-1234-5678</Contents>
-        <Contents>https://travelempathy.netlify.app/</Contents>
+        <Contents>https://gotrip.shop</Contents>
       </ContentsBox>
     </Wrapper>
   );

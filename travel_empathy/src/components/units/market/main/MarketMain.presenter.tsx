@@ -65,7 +65,7 @@ export default function MarketMainPresenterPage(
                   <F.InfoName>{el.name}</F.InfoName>
                 </F.InfoBox>
                 <F.Etc>
-                  <F.Price>{el.price} 원</F.Price>
+                  <F.Price>{el.price.toLocaleString()} 원</F.Price>
                   <F.Date>{getDateBefore(el.createdAt)}</F.Date>
                 </F.Etc>
               </F.Info>
